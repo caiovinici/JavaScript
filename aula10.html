@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: rgb(240, 211, 150);
+            color:#3a3a3a;
+        }
+        div#area {
+            font:normal 20px Arial;
+            background: rgba(231, 132, 3, 0.747);
+            color:#3a3a3a;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+    <div id='area'> 
+        Intereja...
+    </div>
+    <h2>FIM</h2>
+    <script>
+        /*DOM= DOCUMENT OBJECT MODEL*/
+        /*Eventos DOM= o qe pode acontecer com os elementos ex: div*/
+
+        /*Evento de mouse
+        mouseenter
+            mover mouse
+        mousemove
+            continuar movendo por dentor da div
+        mousedown
+            clicar e segurar
+        mouseup
+            momento que solta o click
+        click
+        mouseout
+            movido para fora da div*/
+
+        /*Funções
+        function nomedaação(parâmetros){
+            
+            bloco
+        }
+            */
+        let area = window.document.getElementById('area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrar);
+        area.addEventListener('mouseout', sair);
+        function clicar(){
+            area.innerText = 'Clicou!!';
+            area.style.background = 'green';
+        }
+        function entrar(){
+            area.innerText = 'Entrou!';
+            area.style.background = 'Blue';
+            area.style.color = 'white';
+        }
+        function sair(){
+            area.innerText = 'Saiu..';
+            area.style.background = 'Purple';
+            area.style.color = 'Silver';
+        }
+    </script>
+</body>
+</html>

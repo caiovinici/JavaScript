@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Part°2</title>
+</head>
+<body>
+    <script>
+        // Operadores = Relacionais|Lógicos|Térnario
+        /* Relacionais
+            > < >= <= != 
+            = recebe | == igual
+            === |Realizou uma comparação de igualdade estrita, sem conversão de tipos
+            ==|Realiza uma comparação de igualdade frouxa, o que significa que ele tenta converter os valores para um tipo comum antes de compará-los.
+            
+            Ex:
+                0 == '0'; true, pois '0' é convertido para 0 antes da comparação
+                0 === '0'; false, pois os tipos (number e string) são diferentes
+
+            Lógicos
+                ! negação
+                && conjunção
+                || Disjunção
+
+                ! True|False
+                False|True
+
+                &&
+            True  True = True
+            True  False = False
+            False  True = False
+            False  False = False
+
+                ||
+            True  True = True
+            True  False = True
+            False  True = True
+            False  False = False
+
+            a > b && b % 2 == 0
+                primeiro faz operador artimetico % depois
+                > operadores relacionais por ultimo os logicos &&
+            
+            Exemplo
+            idade >= 15 && idade <= 17 "a idade está entre 15 e 17?"
+            estado == 'RJ' || estado == "SP' 'o estado é RJ ou SP?"
+            salario > 1500 && sexo != 'M' "o salario e acima de 1500 e não e homem"
+
+            Precedência
+            Dentro de uma expressão primeiro lugar () ** /
+            > < >= sem ordem de precedência
+            ! primeiro
+            && segundo
+            || terceiro
+
+            Ternário ? : | sempre o ultimo a ser feito
+            teste ? true : false
+            media >= 7.0 ? 'Aprovado' : 'Reprovado'
+            */
+    </script>
+    
+</body>
+</html>

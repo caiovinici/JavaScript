@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Dados</title>
+    <style>
+        body {
+            background-color: rgb(139, 88, 187);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgba(53, 1, 83, 0.623);
+            /*comentário CSS*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <!--comentário HTML-->
+    <script>
+        //Ex03
+        /*
+        Conversão String == Número
+        Number.parseInt(n) - inteiro
+        Number.parseFloat(n) - real
+        Number(n) - JS decidi se é inteiro ou real
+        */
+        let n1 = Number.parseInt(window.prompt('Digite um número: '))
+        let n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        let soma = n1 + n2
+        
+        /*
+        Conversão Número == String
+        String(n)
+        .tostring()
+        */
+        //window.alert('A soma dos valores é igual a ' + soma)
+        window.alert(`A soma entre {$n1} e ${n2} é igual a ${soma}`)
+        // (number + number) para adição
+        // (string + string) para concatenação
+        /*
+            Formatando String
+        let s ='Caio'
+        'Eu conheço o s' / não faz interpolação
+        'Eu conheço o' + s / usa concatenação
+        'Eu conheço o ${s} / usa template string
+        template string, você usa crase (``)em vez de aspas simples ou duplas.
+        */
+        
+        //.length - quantos caracteres tem a string
+        //.toUpperCase() - tudo para MAIÚSCULAS
+        //.toLowerCase() - tudo para minúsculas
+
+    </script>
